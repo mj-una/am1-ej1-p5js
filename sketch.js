@@ -38,24 +38,22 @@ function setup() {
 }
 
 function draw() {
-  if (vsb) image(img, 0, 0);
-  else setup();
+  if (!vsb) setup();
+  else {
+    image(img, 0, 0);
 
-  posicionM();
-}
-
-function posicionM() {
-  if (0 <= mouseX && mouseX <= width && 0 <= mouseY && mouseY <= height) {
-    noStroke();
-    fill(230);
-    rect(0, 0, 60, 16);
-    fill(0);
-    textAlign(CENTER);
-    text(" - ", 28, 12);
-    textAlign(RIGHT);
-    text(Math.trunc(mouseX), 23, 12);
-    textAlign(LEFT);
-    text(Math.trunc(mouseY), 33, 12);
+    if (0 <= mouseX && mouseX <= width && 0 <= mouseY && mouseY <= height) {
+      noStroke();
+      fill(230);
+      rect(0, 0, 60, 16);
+      fill(0);
+      textAlign(CENTER);
+      text(" - ", 28, 12);
+      textAlign(RIGHT);
+      text(Math.trunc(mouseX), 23, 12);
+      textAlign(LEFT);
+      text(Math.trunc(mouseY), 33, 12);
+    }
   }
 }
 
