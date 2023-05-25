@@ -1,4 +1,4 @@
-// ejercicio 1
+// ejercicio 1 p5js
 // martin julio
 // basado en obra de yakov chernikhov
 
