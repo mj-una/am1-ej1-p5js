@@ -1,7 +1,6 @@
 // martin julio
 // 5-4-23
 // ejercicio 1 dibujo en p5js
-// informatica aplicada 1 - catedra bedoian 
 // basado en obra de yakov chernikhov
 
 let img;
